@@ -1,0 +1,73 @@
+
+.textarea{
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+#displayCode{
+    position: relative;
+    margin-bottom: 10px;
+    font-size:  24px;
+    
+}
+#message{
+    position: relative;
+    margin-top: 10px;
+    border: 1px black solid;
+    width: 420px;
+    height: 300px;
+    background-color: rgb(243, 241, 241);
+}
+#send{
+    border: none;
+  border-radius: 8px;
+  box-shadow: rgba(59, 26, 97, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  background-color: rgb(43, 151, 240);
+  color: #ffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 14px;
+  justify-content: center;
+  line-height: 2em;
+  width:20%;
+  padding: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#send:hover{
+    background-color: rgb(58, 66, 182);
+  border: none;
+  color: white;
+}
+#copytextAppear{
+  display: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(59, 26, 97, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  background-color: rgb(43, 151, 240);
+  color: #ffff;
+  /* display: flex; */
+  font-family: Phantomsans, sans-serif;
+  font-size: 14px;
+  justify-content: center;
+  line-height: 2em;
+  width:20%;
+  padding: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#copytextAppear:hover{
+  background-color: rgb(58, 66, 182);
+  border: none;
+  color: white;
+
+}

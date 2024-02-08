@@ -1,0 +1,109 @@
+body {
+  /* background-color: rgb(192, 227, 241); */
+  background-color: #ffff;
+}
+.code {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+#code {
+    position: relative;
+  width: 100%;
+  height: 50px;
+  border-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  right: 10px;
+  top: 10px;
+  
+}
+
+#codesubmit {
+  align-items: center;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgb(43, 151, 240);
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 2em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  right: -10px;
+  position: relative;
+  
+  
+  
+}
+
+#codesubmit:hover {
+  color: white;
+  background-color:rgb(58, 66, 182);
+
+}
+
+button:active {
+  transform: scale(0.8);
+}
+.text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  margin-top: 40px;
+}
+#paste {
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(59, 26, 97, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  background-color: rgb(43, 151, 240);
+  color: #ffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 14px;
+  justify-content: center;
+  line-height: 2em;
+  width: 100%;
+  padding: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#paste:hover {
+  background-color: rgb(58, 66, 182);
+  border: none;
+  color: white;
+}
+#paste a{
+    color: white;
+    text-decoration: none;
+}
+.footer {
+  position: absolute;
+  bottom: 0px;
+  left: 47%;
+ 
+}
+.footer a{
+  color: rgb(43, 151, 240);
+  /* text-decoration: none; */
+}
+.footer a:hover{
+  color:rgb(58, 66, 182) ;
+}

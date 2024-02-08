@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ftexts-easy,fast and secure text sharing</title>
+    <link rel="stylesheet" href="text.css" />
+  </head>
+  <body>
+    <div>
+      <nav>
+        <div class="heading">
+          <h2 id="logo"><a href="ftext.html">Ftexts</a></h2>
+          <h4 id="caption">easy,fast and secure</h4>
+        </div>
+      </nav>
+      <div class="textarea">
+        <div id="displayCode"></div>
+        <label for="message">Enter your text</label>
+        <br />
+        <textarea
+          rows="10"
+          cols="30"
+          id="message"
+          placeholder="Type or Paste here"
+        ></textarea
+        ><br />
+        <input type="submit" id="send" value="Send"  onclick="codeDekhau();" />
+        <button id="copytextAppear" onclick="copyText()">copy text</button>
+        <br />
+        <!-- random 4 digit code generate garne code -->
+<script>
+   const characters ='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+   function generateString(length) {
+      let result = ' ';
+      const charactersLength = characters.length;
+      for ( let i = 0; i < length; i++ ) {
+         result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
+      
+   }
+   function codeDekhau(){
+    var code ="Sharing code: " + generateString(4);
+    document.getElementById("displayCode").innerHTML = code;
+   }
+   
+</script>
+<!-- yo chai textarea ma j type garyo tyo copy hune code -->
+<script>
+  function copyText() {
+
+  var copyText = document.getElementById("message");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+
+
+}
+</script>
+<!-- yo chai send thichda copy text vanne button appear hune code -->
+<script>
+  const copyButton = document.getElementById("send");
+  const textButton = document.getElementById("copytextAppear");
+
+  copyButton.addEventListener("click", function() {
+    textButton.style.display = "inline-block";
+  });
+</script>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
